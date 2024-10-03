@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(https://cdn.tatlerasia.com/tatlerasia/i/2023/12/08104921-259076589-2911822299067010-3020013091245193937-n_cover_1600x974.jpg)no-repeat;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            width: 100%;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: #f37474;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .logo a:hover {
+            color: #fff;
+        }
+
+        nav li {
+            display: inline-block;
+            list-style: none;
+            padding: 0px 20px;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        a,
+        button {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(231, 135, 135);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button {
+            background: black;
+            border: 2px solid darkred;
+            border-radius: 50px;
+            padding: 9px 25px;
+        }
+
+        nav li a:hover {
+            color: #fff;
+        }
+
+        button a:hover {
+            color: rgb(97, 0, 0);
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+        nav li:hover .dropdown {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        nav li:hover .dropdown ul {
+            display: block;
+            margin: 10px;
+        }
+
+        nav li:hover.dropdown ul li {
+            width: 150px;
+            padding: 10px;
+        }
+
+        .header {
+            padding: 100px;
+            text-align: center;
+            color: whitesmoke;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .openinghours {
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 18vh;
+            text-align: center;
+            color: whitesmoke;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+            padding: 25px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            color: whitesmoke;
+            flex: 40%;
+            background-color: black;
+            padding: 20px;
+        }
+
+        .main {
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            color: whitesmoke;
+            flex: 60%;
+            background-color: black;
+            padding: 20px;
+        }
+
+        .main img {
+            width: 100%;
+        }
+
+        .barphoto1 {
+            padding: 10px;
+            background-color: black;
+            padding: 20px;
+        }
+
+        .barphoto1 img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .barphoto2 img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .fakeimg {
+            width: 100%;
+            height: 200px;
+            align-items: center;
+        }
+
+        .fakeimg1 {
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">TISPY TOPSY EGGY</a>
+        </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contactus.html">Contact US<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="aboutus.html">About us</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <button><a href="">Book A Table</a></button>
+
+    </header>
+    <div class="header">
+        <h1>Welcome</h1>
+        <p>“Cool Friends, Cool Drinks, Cool Vibes.”</p>
+    </div>
+    <div class="openinghours">
+        <h2>Opening hours</h2>
+        <p1>14:00<sup>pm</sup> to
+            4:00<sup>pm</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4:00<sup>am</sup>
+            to 7:00<sup>am</sup></p>
+
+    </div>
+    <div class="row">
+        <div class="side">
+            <h2>We Pour, You Roar!</h2>
+            <br><br><br>
+            <h2> Say Cheers to Beers, Cocktails, and New Friends</h2>
+            <div class="barphoto1" style="height:500px;">
+                <img src="https://wannaparty.in/wp-content/uploads/2021/08/2-17.jpg">
+            </div>
+            <h2>Bars with day</h2>
+            <h3>The atmosphere in our bar, often lively and bustling, creates an environment where people feel
+                comfortable striking up conversations with strangers or catching up with friends.<br> Our bars serve as
+                a meeting place, a venue where you and your friends can spend time with loved ones in a relaxed and
+                informal setting.</h3>
+            <div class="fakeimg" style="height:300px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXq_UIUCdd28sSSbXpqthyZQ6IvHsHdiZS_Q&s">
+            </div>
+        </div>
+        <div class="main">
+            <h2>Disco Fever Is in the Air, Come Party With Us if You Dare!</h2>
+            <br>
+            <h3>Step Into a World of Dazzling Lights and Infectious Beats at Our Disco Bar!</h3>
+            <div class="barphoto2" style="height:450px;" style="width: 70px;">
+                <img src="https://res.cloudinary.com/peerspace-inc/image/upload/yrcslra68710awv4o70n.jpg">
+            </div>
+            <h2>“Join Us for Game Time and Great Beer.”</h2>
+            <div class="fakeimg1" style="height:400px;">
+                <img src="https://i.pinimg.com/736x/39/d1/92/39d192bee61b9f8fefe841d0ec42d0b0.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

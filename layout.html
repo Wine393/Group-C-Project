@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            background-image: url("https://t4.ftcdn.net/jpg/07/23/29/41/360_F_723294151_xl9nkxrmWTUgpmdEIXBQu6j2iE9wqoSN.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            height: 300px;
+            width: 100%;
+        }
+
+        .topnav {
+            background-color: rgb(108, 173, 230);
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: right;
+            padding: 15px 15px;
+            text-align: center;
+            border-radius: 30%;
+        }
+
+        header img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            /* padding: 10px 10px; */ 
+        }
+
+        aside {
+            width: 30%;
+            background: rgb(195, 182, 34);
+            background: linear-gradient(0deg, rgba(195, 182, 34, 0.9949229691876751) 0%, rgba(241, 172, 172, 1) 100%);
+            height: 500px;
+            float: left;
+
+        }
+
+        aside img {
+            width: 90%;
+            height: 300px;
+            float: left;
+            padding: 30px 30px;
+        }
+
+        aside p {
+            text-indent: 90px;
+            line-height: double;
+        }
+
+        section {
+            width: 70%;
+            background: rgb(34, 191, 195);
+            background: linear-gradient(0deg, rgba(34, 191, 195, 0.9949229691876751) 0%, rgba(241, 241, 172, 1) 100%);
+            height: 500px;
+            float: left;
+        }
+
+        section p {
+            text-indent: 50px;
+            line-height: double;
+        }
+
+        section h2 {
+            padding: 10px;
+        }
+
+        section img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            float: right;
+        }
+
+        footer {
+            background-color: rgb(187, 246, 247);
+            height: 200px;
+            padding-top: 10px;
+            float: left;
+            width: 100%;
+        }
+    </style>
+    <title>Apple Company</title>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a href="layout.html">Support</a>
+            <a href="layout.html">Accessories</a>
+            <a href="layout.html">iPhone</a>
+            <a href="layout.html">iPad</a>
+            <a href="layout.html">Mac</a>
+            <a href="layout.html">Store</a>
+        </div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAdVBMVEX///8AAAD8/PwEBAQNDQ2JiYnX19fAwMCenp729vb5+fm4uLjv7+/U1NTl5eVxcXEeHh6mpqZiYmLJyclHR0dNTU2xsbFVVVVdXV3n5+cRERE8PDx8fHzd3d2EhISkpKQrKyuampo1NTWSkpIYGBgjIyNJSUnpiCFjAAAEO0lEQVR4nO3ci3KiMBQG4CTcRFFEFFS82+77P+ImQJEO1q3JsGEO/9dpp1PamfA3nEAIMAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4UQbMrYdJdGtlsyTCI9rTmf2W7GEIWJTIYjnGcCFY0jPwLbLRmc6MC/zG23ZWgWm7LbKO7CdmMG5liUB1SZzlrYbs2AyCzCTd1rlBNDOg+CxU02jio5CKcla+qN/LpBNG3RspUNBvLv7o+C4/DcdmuGRXWcJhv3aLs5w5K1Riqe2W7NwOT8kY6Hkeq7uhI78vPAEM43i7raOOXpn0A4DRlF0NTixHZrhierS07uq7nAUR5W1T53Dhr5g6zsONvg8VvjNY2Ovr+blt8LFY6/jb1sUQUTLtLsnAR+JNjokhLH86rYq45y2U78sPpZs3GRrC71iO4Wh2xnrZk2hLO8ufJWiuuxlUy2rTcq6pt9PI4ZQVVnRbDmHduszGcxi93uRs5jv1ulyJE7GMWcty8TvnqQm3vX1fJZMqr/LJMxjF/prRNN+whzeH0sdTYdQvLhBB9NZ/gpn6fktji03fgeqf97sH8RwCsquBPhniMr6nH5snu8TEf+4dn2LvRJ3VrQDofzG915U3lMeK/ryj/EEeWKPNcPRroTTkb+17cm2Vxtt79fqckx5RE+BVQ7ttINRhbxle0d6JWoJ0H1XEhfmMuec9YfxjnxaVPBNvol5xJObbe/T0KEuslwNVKRLcaKMDrJ8W03v2+JfjZ72h1H7p2nH05OPhyD0+O77db3bqMfDumZilKhHw71xSjCJJyEfM0xCGdiu/W9MwjnYLvtvTMoyGvbbe+d9oQF5+6Ues056YfDU9oVWbCJQTix7eb3LTAIZ096rqueCNSc0HHVBQTpA4uZ3LNyjsTTMbjydHhOeQGK3LGrwa1gh/pzaXOT21blNQThtV1T1ywddcuTbjork3DUkn/KL2+YGYWjHmtMbe9Cb0T0oZ9NLab7gFpsGI3sPHuqRVmkxj2HH4jWZCGEwYRX3XUI395LjJa9SYXtPeiNYNHNsOPQfZ+OrBYTg2UoMptbSLPisPKZqujTqOskZLMpTUyKzo3yKbIUPXma6NcyouN4TZjMlubEb0Kw8jRZsyjPKV+Vs+pZtIvWyY6jViITVz1a/344Dv9Ddxhv01rj5Y7lFVU5f6/zqN9NKE+SPgi2W74ZjjOml6K8uezW4Xk4mreiCDZ7L51iJ8Q4DqtSxh+PSDcvlPyp39zG9hbO4KNJp4qmiM+Bf5wH9+2yKjPO19cN7WUEHfII8Tetqnzz5s1D42I3W1WZVbyQkX4s5KnoXE99fcZBdbn9qCqLa/0mEHck7/jomqbXk3eeP33RgIjS5HoOiE9S/Gg0g4+OcnQWr05fxnJq89zrfae8JAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH7lL1BLJ9mGKMGLAAAAAElFTkSuQmCC
+        " alt="Apple">
+        <h1>Apple</h1>
+        <p>You've been seen everything like this before</p>
+    </header>
+    <aside>
+        <h2>Aside</h2>
+        <img src="https://content.fosterandpartners.com/api/media/getCroppedImage?imagePath=/media/vhyeepbs/hero-2545-fp733904.jpg&width=1200&height=630&crop=true"
+            alt="no image">
+        <p>Apple Central Wold - Thailand</p>
+    </aside>
+    <section>
+        <h2>Apple of the Year</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque quod perferendis,
+            voluptate
+            ullam dolorem assumenda ipsum repudiandae maiores praesentium, culpa aliquam corrupti aspernatur ducimus
+            nostrum obcaecati, fugit qui quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quaerat
+            assumenda saepe odit quo suscipit molestiae neque, dicta recusandae labore dolorem sed quis. Officia
+            omnis
+            voluptatem voluptatibus aliquid molestias error! Mollitia?Lorem ipsum dolor sit amet consectetur
+            adipisicing
+            elit. Illum aliquid exercitationem voluptatum similique sapiente fuga amet, sed, fugit a non possimus
+            iste
+            cum voluptatem provident, placeat quibusdam id qui et? Lorem ipsum dolor sit amet consectetur
+            adipisicing
+            elit. Nesciunt nostrum cumque odio alias deserunt itaque quisquam tempora omnis dolor ea sed velit, at
+            minima? Animi natus harum soluta vitae reiciendis.</p>
+
+        <img src="https://images.macrumors.com/t/e3LPJkid1hrbCU3zbjkRQMCjV78=/1600x0/article-new/2023/12/Top-5-Apple-Products-to-Look-Forward-to-in-2024-Feature.jpg"
+            alt="no image">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque quod
+            perferendis, voluptate ullam dolorem assumenda ipsum repudiandae maiores praesentium, culpa aliquam
+            corrupti aspernatur ducimus
+            nostrum obcaecati, fugit qui quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quaerat
+            assumenda saepe odit quo suscipit molestiae neque, dicta recusandae labore dolorem sed quis. Officia
+            omnis
+            deserunt sint corporis, veritatis velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit quos repellendus accusantium, nam sed ex odit aut ipsa? Iure saepe sunt quasi! A dolor
+            deserunt at fugiat, aspernatur similique voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Ut nam officiis ab hic optio labore sit cupiditate tempora excepturi autem, ullam, nisi odio
+            elit. Nesciunt nostrum cumque odio alias deserunt itaque quisquam tempora omnis dolor ea sed velit, at
+            minima? Animi natus harum soluta vitae reiciendis.</p>
+    </section>
+    <footer>
+        <h2>Site Map</h2> table
+        <ul>
+            <li>Home</li>
+            <li>Store</li>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>Accessories</li>
+            <li>Support</li>
+        </ul>
+        <div class="copyright">
+            Copyright &copy; 2024 Zett, All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

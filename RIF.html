@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiry Form</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Reservation Inquiry Form</h1>
+  <hr>
+  <form action="reserve.html" method="post">
+    <label for="exampleInputEmail1" class="form-label">First Name:</label>
+    <br>
+    <input type="text" name="first_name">
+    <br>
+    <label for="exampleInputEmail1" class="form-label">Last Name:</label>
+    <br>
+    <input type="text" name="last_name">
+    <br>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label> <br>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="name@example.com"> <br>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div> <br>
+    <label for="exampleDataList" class="form-label">Phone Number</label>
+    <label for="exampleDataList" class="form-label">Datalist example</label>
+    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+    <datalist id="datalistOptions">
+      <option value="San Francisco">
+      <option value="New York">
+      <option value="Seattle">
+      <option value="Los Angeles">
+      <option value="Chicago">
+    </datalist>
+  </form>
+
+  <div class="input-box">
+    <label>Number of People</label>
+    <input type="text" placeholder="Enter your prefered guests"  required>
+</div>
+
+<div class="input-box">
+    <label> Is there any additional information you would like to add?</label>
+    <textarea name="" placeholder="Any additional information" id="" cols="30" rows="10"  required></textarea>
+</div>
+    <input type="button" value="submit" class="btn">
+</div> 
+  </form>
+</body>
+
+</html>
+
+<label>Date and Time</label>
+                    <input type="datetime-local" required>
+                </div>
